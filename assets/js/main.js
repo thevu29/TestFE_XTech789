@@ -23,8 +23,8 @@ const heroDots = document.querySelectorAll('.hero-section .dot')
 let currentHeroIndex = 0
 
 const heroImages = [
-    './assets/images/products/hero-1.png',
-    './assets/images/products/hero-2.png'
+    './assets/images/hero-1.png',
+    './assets/images/hero-2.png'
 ]
 
 const changeHeroImage = index => {
