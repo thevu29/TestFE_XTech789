@@ -162,7 +162,7 @@ const renderProduct = (start, count) => {
                             <div class="d-flex align-items-center flex-wrap">
                                 ${priceDiscount}
                             </div>
-                            <button class="add-cart-btn__mobile">Add to cart</button>
+                            <button class="add-cart-btn">Add to cart</button>
                         </div>
                         <div class="product-overlay">
                             <div class="product-action">
