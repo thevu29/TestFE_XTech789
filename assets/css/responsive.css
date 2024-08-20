@@ -187,10 +187,6 @@
         padding: 12px 40px;
     }
 
-    .cart-dropdown {
-        width: 100vw;
-    }
-
     .header-menu__mobile-overlay.active {
         opacity: 1;
         visibility: visible;
