@@ -204,6 +204,7 @@ const cartDropdown = document.querySelector('.cart-dropdown')
 const cartButton = document.querySelector('.nav-icon.cart')
 
 const initCart = () => {
+    cartDropdown.style.width = '300px'
     const carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts')) : []
 
     if (carts.length > 0) {
@@ -239,6 +240,7 @@ const initCart = () => {
 
         cartDropdown.innerHTML = cartDropdownContent
     } else {
+        cartDropdown.style.width = '200px'
         cartDropdown.innerHTML = `
             <div class="empty-cart">
                 <img src="./assets/images/cart-empty.png" />
@@ -290,7 +292,7 @@ function attachAddToCartListeners() {
             e.stopPropagation()
 
             const target_parent = e.target.closest('.product-card')
-            target_parent.style.zIndex = '999999'
+            target_parent.style.zIndex = '999'
 
             const img = target_parent.querySelector('.product-img')
             const flying_img = img.cloneNode()
